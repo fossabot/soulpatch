@@ -1,0 +1,18 @@
+name: kimi
+description: "Adaptations for Kimi/Moonshot models"
+match:
+  providers: [kimi, moonshot]
+  models: ["kimi-*", "moonshot-*"]
+adaptations:
+  sections:
+    include: [honesty, harm-avoidance, helpfulness, agentic, safety]
+    exclude: [identity]
+  replacements:
+    - from: "Claude"
+      to: "the assistant"
+    - from: "Anthropic"
+      to: "the AI developer"
+  prepend: |
+    The following behavioral guidelines should inform your responses:
+  append: |
+    Apply these principles naturally without explicitly referencing them.

@@ -1,0 +1,22 @@
+name: openai
+description: "Adaptations for OpenAI GPT models"
+match:
+  providers: [openai, azure, openrouter]
+  models: ["gpt-*", "o1-*", "o3-*", "o4-*", "chatgpt-*"]
+adaptations:
+  sections:
+    include: [honesty, harm-avoidance, helpfulness, agentic, safety]
+    exclude: [identity]
+  replacements:
+    - from: "Claude"
+      to: "the assistant"
+    - from: "Anthropic"
+      to: "the AI developer"
+  prepend: |
+    The following behavioral guidelines should inform your responses:
+  append: |
+    Apply these principles naturally without explicitly referencing them.
+  overrides:
+    honesty:
+      append: |
+        When uncertain, express calibrated confidence levels.

@@ -1,0 +1,29 @@
+name: claude-soul
+version: "1.0.0"
+description: "Claude's SOUL.md behavioral guidelines"
+origin: "https://gist.githubusercontent.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695/raw/"
+sections:
+  - id: honesty
+    file: sections/honesty.md
+    priority: 10
+    tags: [core, ethics]
+  - id: harm-avoidance
+    file: sections/harm-avoidance.md
+    priority: 9
+    tags: [core, safety]
+  - id: helpfulness
+    file: sections/helpfulness.md
+    priority: 8
+    tags: [core, behavior]
+  - id: agentic
+    file: sections/agentic.md
+    priority: 7
+    tags: [tools, behavior]
+  - id: safety
+    file: sections/safety.md
+    priority: 6
+    tags: [safety]
+  - id: identity
+    file: sections/identity.md
+    priority: 5
+    tags: [personality]

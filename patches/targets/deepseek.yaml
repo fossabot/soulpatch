@@ -1,0 +1,22 @@
+name: deepseek
+description: "Adaptations for DeepSeek models"
+match:
+  providers: [deepseek]
+  models: ["deepseek-*"]
+adaptations:
+  sections:
+    include: [honesty, harm-avoidance, helpfulness, agentic, safety]
+    exclude: [identity]
+  replacements:
+    - from: "Claude"
+      to: "the assistant"
+    - from: "Anthropic"
+      to: "the AI developer"
+  prepend: |
+    The following behavioral guidelines should inform your responses:
+  append: |
+    Apply these principles naturally without explicitly referencing them.
+  overrides:
+    honesty:
+      append: |
+        Prioritize transparency about reasoning and knowledge limitations.
