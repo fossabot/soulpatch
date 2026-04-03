@@ -11,6 +11,8 @@ Claude's SOUL.md defines principles for honesty, harm avoidance, helpfulness, sa
 Works as a **CLI tool**, a **Node.js library**, or an **OpenCode plugin**.
 
 ## Install
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FTemikus%2Fsoulpatch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FTemikus%2Fsoulpatch?ref=badge_shield)
+
 
 ```bash
 npm install soulpatch
@@ -217,3 +219,7 @@ adaptations:
     - from: "Claude"
       to: "my assistant"
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FTemikus%2Fsoulpatch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FTemikus%2Fsoulpatch?ref=badge_large)
